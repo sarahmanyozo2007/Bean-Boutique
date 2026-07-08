@@ -692,3 +692,91 @@ table {
     background: #8b5e3c;
     color: white;
   }
+   table {
+    margin-left: auto;
+    margin-bottom: auto;
+    width: 80%;
+  }
+
+  .cart-table th,
+  .cart-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  .cart-table tr th {
+    justify-content: space-between;
+  }
+
+  .total-section {
+    text-align: center;
+    margin: 30px;
+  }
+
+  .button-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .button-section button {
+    width: 180px;
+    height: 45px;
+    border: none;
+    border-radius: 6px;
+    background: #8b5e3c;
+    color: white;
+    cursor: pointer;
+  }
+
+  .button-section button:hover {
+    background: #b57d52;
+  }
+  .cart-wrapper {
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .offers-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .offers-wrapper,
+  .subscription-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .offer-card,
+  .subscription-card {
+    width: 300px;
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+  }
+
+  .offer-card:hover,
+  .subscription-card:hover {
+    transform: translateY(-6px);
+  }
+
+  .benefits-section {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .benefits-wrapper {
+    width: 700px;
+    background: white;
+    color: black;
+    padding: 25px;
+    border-radius: 10px;
+  }
