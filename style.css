@@ -235,3 +235,184 @@ services {
   padding: 25px;
   margin-top: 40px;
 }
+.footer {
+  background: #1c0e07;
+  color: white;
+  text-align: left;
+  padding: 35px 20px;
+  margin-top: 50px;
+}
+
+.footer h2 {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 8px 0;
+}
+
+.contact-info p {
+  margin: 12px 0;
+}
+
+.contact-info i {
+  color: #d9a066;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #d9a066;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  margin: 0 8px;
+  background: #8b5e3c;
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #d9a066;
+  color: #3d2518;
+  transform: translateY(-5px);
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.coffee-page,
+.equipment-page,
+.events-section,
+.cart-section,
+.offers-section {
+  padding: 50px;
+}
+
+.coffee-header,
+.equipment-header,
+.events-header,
+.cart-header,
+.offers-header,
+.subscription-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-container input {
+  width: 300px;
+  padding: 12px;
+  border: 2px solid #8b5e3c;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.search-container input:focus {
+  width: 360px;
+  outline: none;
+}
+
+.equipment-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.equipment-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: start;
+  max-width: 400;
+}
+.equipment-card {
+  background: rgb(229, 226, 226);
+  color: black;
+  padding: 40px;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(20, 20, 20, 0.3);
+  transition: 0.4s;
+  gap: 20px;
+}
+
+.equipment-card:hover {
+  transform: translateY(-8px);
+}
+
+.equipment-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.equipment-card h3 {
+  margin: 5px 0;
+}
+
+.equipment-card p {
+  margin: 5px;
+}
+
+.equipment-card button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  background: #8b5e3c;
+  color: rgb(61, 35, 35);
+  cursor: pointer;
+}
+
+.equipment-card button:hover {
+  background: #b57d52;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: start;
+}
+.product-card {
+  background: rgb(229, 226, 226);
+  color: black;
+  padding: 40px;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(20, 20, 20, 0.3);
+  transition: 0.4s;
+  gap: 20px;
+}
+.product-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.section-title {
+  padding: 20px;
+}
