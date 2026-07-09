@@ -35,3 +35,47 @@ let images = [
 ];
 
 let current = 2;
+function changeImage(){
+
+    current++;
+
+    if(current >= images.length){
+
+        current = 2;
+
+    }
+
+    document.getElementById("slide").src = images[current];
+
+}
+
+setInterval(changeImage,3000);
+
+window.onload = function(){
+
+    if(localStorage.getItem("popupShown") == "yes"){
+
+        document.getElementById("popup").style.display = "none";
+        } else {
+            popup.style.display = "flex"; // Shows popup for first-time visitors
+
+    }
+
+}
+
+function closePopup(){
+
+    let email = document.getElementById("email").value;
+
+    if(email == ""){
+
+        alert("Please enter your email.");
+        return;
+
+    }
+
+    document.getElementById("popup").style.display = "none";
+
+    localStorage.setItem("popupShown","yes");
+
+}
