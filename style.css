@@ -780,3 +780,76 @@ table {
     padding: 25px;
     border-radius: 10px;
   }
+  .benefits-wrapper h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .benefits-wrapper ul {
+    margin-left: 20px;
+  }
+
+  .benefits-wrapper li {
+    margin-bottom: 10px;
+  }
+
+  .header,
+  .hero-section,
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-text,
+  .hero-image,
+  .about-text,
+  .about-image {
+    width: 100%;
+  }
+
+  .hero-image img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .service-wrapper,
+  .coffee-wrapper,
+  .equipment-wrapper,
+  .events-wrapper,
+  .offers-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .register-wrapper {
+    width: 90%;
+  }
+
+  .cart-table {
+    width: 100%;
+  }
+
+  .button-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefits-wrapper {
+    width: 95%;
+  }
+
+  .search-container input {
+    width: 90%;
+  }
+
+  .search-container input:focus {
+    width: 95%;
+  }
+  
+}
+
