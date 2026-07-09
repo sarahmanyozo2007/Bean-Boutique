@@ -79,3 +79,54 @@ function closePopup(){
     localStorage.setItem("popupShown","yes");
 
 }
+function addToCart(product, price){
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    cart.push({
+
+        name: product,
+        price: price
+
+    });
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert(product + " added to cart.");
+
+}
+function loadCart(){
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    let table = document.getElementById("cartItems");
+
+    if(table == null){
+
+        return;
+
+    }
+
+    let total = 0;
+
+    table.innerHTML = "";
+
+    for(let i=0;i<cart.length;i++){
+
+        total += cart[i].price;
+
+        table.innerHTML +=
+
+        "<tr>" +
+
+        "<td>"+cart[i].name+"</td>" +
+
+        "<td>K"+cart[i].price+"</td>" +
+
+        "<td>1</td>" +
+
+        "<td>K"+cart[i].price+"</td>" +
+
+        "</tr>";
+
+    }
