@@ -130,3 +130,30 @@ function loadCart(){
         "</tr>";
 
     }
+    document.getElementById("grandTotal").innerHTML =
+    "Total Amount: K"+total;
+
+}
+document.getElementById("eventForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    alert(
+        "Registration Successful!\n\n" +
+        "Thank you for registering with Bean Boutique.\n\n" +
+        "A confirmation email will be sent to your email address.\n\n" +
+        "We look forward to seeing you at our event!"
+    );
+
+    this.reset();
+
+});
+function registerAgain(){
+
+    document.getElementById("eventForm").reset();
+
+    document.getElementById("eventForm").style.display="grid";
+
+    document.getElementById("success-message").style.display="none";
+
+}
